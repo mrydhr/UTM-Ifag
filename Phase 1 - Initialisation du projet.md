@@ -22,3 +22,45 @@
 | Utilisateurs    | Étudiants / professeurs / Administration                                                                  |
 | Administrateurs | Service IT                                                                                                |
 | Encadrant       | Benaissa Adnane                                                                                           |
+
+### 1. L'Interconnexion Authentification (LDAP/AD)
+
+C'est le lien entre la page de login et ton serveur Samba.
+
+- **Action :** Aller dans `System > User Management > Authentication Servers`.
+    
+- **But :** Ajouter ton serveur Samba comme source d'authentification. Ainsi, quand un utilisateur se connecte sur le Portail Captif, pfSense ira demander au serveur Samba si le mot de passe est correct.
+
+
+### 2. Le Filtrage de Contenu (Le "Web Filtering")
+
+Pour bloquer les sites malveillants ou non autorisés à l'IFAG.
+
+- **Action :** Installer le paquet **pfBlockerNG**.
+    
+- **But :** Activer le filtrage DNS (DNSBL) pour bloquer des catégories de sites (publicités, phishing, réseaux sociaux si besoin). C'est une spécification majeure de ton cahier des charges.
+    
+
+### 3. La Détection d'Intrusion (IDS/IPS)
+
+C'est ce qui transforme ton pare-feu en "bouclier intelligent".
+
+- **Action :** Installer **Snort** ou **Suricata**.
+    
+- **But :** Configurer l'analyse des paquets sur l'interface WAN et DMZ pour détecter des tentatives de scan (comme Nmap) ou des exploits connus.
+    
+
+### 4. La Gestion de la Bande Passante (Traffic Shaping)
+
+- **Action :** Aller dans `Firewall > Traffic Shaper`.
+    
+- **But :** Limiter la vitesse des étudiants pour éviter qu'un seul utilisateur ne sature toute la connexion de l'école (QoS).
+    
+
+### 5. La Journalisation et le Reporting (Logs)
+
+Pour ta partie "Conformité légale".
+
+- **Action :** Configurer `Status > System Logs`.
+    
+- **But :** Vérifier que pfSense garde une trace de qui s'est connecté et quand. Pour ton PFE, tu peux même installer **ntopng** pour avoir des graphiques très détaillés sur l'utilisation du réseau.

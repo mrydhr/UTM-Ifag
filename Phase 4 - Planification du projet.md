@@ -107,7 +107,7 @@ FreeRADIUS s’appuie sur une architecture modulaire : chaque module assure une 
 ###### Architecture :
 - L’utilisateur tente d’accéder au réseau  
 - Le firewall (pfSense) demande une authentification  
-- La demande est envoyée au serveur RADIUS  
+	- La demande est envoyée au serveur RADIUS  
 - RADIUS vérifie l’utilisateur dans Active Directory  
 - Accès autorisé ou refusé
 ##### Conclusion :

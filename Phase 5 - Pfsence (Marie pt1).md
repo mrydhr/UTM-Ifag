@@ -15,7 +15,7 @@ vidéo tuto d'installation suivi : https://youtu.be/o4LHO5hYCxQ?si=4vAv6CU-Hf6sA
 3. Affectation des 3 interface réseaux pour la machine
 	1. WAN  : NAT (adapter 1) | |Internet|
 	2. LAN : Réseau interne (adapter 2) | Utilisateurs
-	3. DMZ : Réseau interne (adapter 3) | Services exposés
+	3. DMZ : Réseau privé hôte (adapter 3) | Services exposés
 4. Installation et configuration de pfsense
 	1. ![[Pasted image 20260322114114.png]]
 
