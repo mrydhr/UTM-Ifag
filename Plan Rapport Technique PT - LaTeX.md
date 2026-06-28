@@ -364,4 +364,3 @@ cat /var/log/suricata/suricata.log | tail
 ```
 
 #### Annexe E : Diagramme de Gantt
-(Inclure le Gantt depuis `UTM ifag Gantt.pod`)

@@ -942,3 +942,24 @@ curl -s -G "http://192.168.2.20:8086/query?db=pfsense" -u admin:admin123@ --data
 
 ![[Pasted image 20260628110839.png]]
 
+
+![[Pasted image 20260627133637.png]]
+
+Logs Firewall
+![[Pasted image 20260627134210.png]]
+
+Logs du portail captif :
+![[Pasted image 20260627134448.png]]
+
+COnfiguration du logging de FreeRaDIUS 
+![[Pasted image 20260627135427.png]]
+
+![[Pasted image 20260627141123.png]]
+![[Pasted image 20260627152925.png]]
+![[Pasted image 20260627154555.png]]
+
+![[Pasted image 20260627164205.png]]
+
+token api : ```
+LWOBFvSFDZKiLHkES9m-6gK68uF957KRZFdfgcoLDEQSFldJvu7TKumIgE_ht-tdeUkV4afNepU4Q9_NEJT3LQ==
+
